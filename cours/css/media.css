@@ -1,0 +1,403 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.nav li a {
+		font-size: 10px;
+	}
+	header .nav__button {
+		margin-left: 0;
+		font-size: 10px;
+		float: left;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	#modal_close{
+		top: 0;
+		right: 40px;
+	}
+	.mymagicoverbox_fenetre p {
+		font-size: 16px;
+		margin: 50px 0 20px 0;
+		padding: 0 10px;
+	}
+	.mymagicoverbox_fenetre {
+		width: 318px;
+		left: -159px;
+		z-index: 9999;
+		position: fixed;
+		margin-left: 50%;
+	}
+	.mymagicoverbox_fenetreinterieur {
+		height: 350px;
+	}
+	.pop-up_form textarea {
+		width: 100%;
+		height: 100px;
+		font-size: 12px;
+		padding-top: 10px;
+	}
+	.pop-up_form input {
+		width: 100%;
+		height: 30px;
+		font-size: 12px;
+	}
+	.pop-up_form button {
+		width: 100%;
+	}
+	.block_slider_text {
+		padding-top: 0;
+	}
+	.block_slider_text h1 {
+		font-size: 24px;
+	}
+	.block_slider p {
+		font-size: 20px;
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+	.mymagicoverbox {
+		margin: 0;
+	}
+	.block__main {
+		padding-top: 0;
+		margin-bottom: 0;
+	}
+	header {
+		display: none !important;
+	}
+	.open	{
+		position: fixed;
+		z-index: 10;
+		background: rgba(0,0,0,.8);
+		display: block;
+	}
+	.adaptive_logo {
+		display: block;
+		margin-top: 140px;
+	}
+	h3 {
+		font-size: 22px;
+	}
+	h2 {
+		font-size: 26px;
+		padding-bottom: 10px;
+	}
+	.entry__form p {
+		font-size: 16px;
+		padding-top: 0;		
+	}
+	.entry__form form input {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.big_img_about {
+		display: none;
+	}
+	.about__frontend {
+		padding-bottom: 50px;
+	}
+	.about__frontend h2 {
+		font-size: 17px;
+	}
+	.frontend_info h2 {
+		font-size: 19px;
+	}
+	.about__frontend_info p {
+		font-size: 13px
+	}
+	.frontend_info_text h5 {
+		font-size: 14px;
+		padding-bottom: 0;
+	}
+	.frontend_info_text p {
+		font-size: 12px;
+	}
+	.frontend_info_text_img {
+		padding-top: 20px;
+	}
+	.about__us_frontend_img {
+		padding-top: 0;
+	}
+	.about__us_frontend_img  img{
+		width: 190px;
+		height: 187px;
+	}
+	.about__us_frontend_text h2{
+		display: none;
+	}
+	.adaprive_about h2{
+		display: block;
+	}
+	.about__us_frontend_text p {
+		text-align: center;
+		font-size: 15px;
+	}
+	.block__Gagarin img {
+		width: 120px;
+		height: 120px;
+		margin-top: 25px;
+	}
+	.block__Gagarin p {
+		font-size: 12px;
+		padding: 0;
+	}
+	.block__Gagarin h4 {
+		padding: 0;
+	}
+	.statistic_desc {
+		display: none;
+	}
+	.statistic_adaptive {
+		display: block;
+	}
+	.statistic_adaptive img {
+		width: 100px;
+		height: 100px;
+	}
+	.statistic_adaptive h3 {
+		padding: 0;
+		margin: 0;
+	}
+	.statistic_adaptive p {
+		padding: 0;
+		margin: 10px 0;
+		font-size: 10px;
+	}
+	.light_blue {
+		border: none;
+	}
+	.dark_blue {
+		border: none;
+	}
+	.reservation h1{
+		font-size: 25px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 20px;
+	}
+	.entry__form_enroll_blue input {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	.present_button {
+		padding-top: 10px;
+	}
+	.present_adaptive h2 {
+		font-size: 22px;
+	}
+	.present_img {
+		width: 150px;
+		height: 150px;
+	}
+	.present_img img{
+		width: 150px;
+		height: 150px;
+		padding-top: 15px;
+	}
+	.present h5 {
+		margin: 0;
+		padding-bottom: 20px;
+		font-size: 12px;
+	}
+	.present p {
+		font-size: 11px;
+	} 
+	.present_button{
+		margin: 0;
+		margin-bottom: 30px;
+	}
+	.quotes {
+		display: none;
+	}
+	.reviews_info p {
+		font-size: 12px;
+	}
+	.reviews_info .name {
+		padding: 0;
+		font-size: 18px;
+		margin: 0;
+	}
+	.reviews_info .profession {
+		font-size: 15px;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 15px;
+	}
+	.reviews_img {
+		width: 110px;
+		height: 110px;
+		padding: 5px;
+	}
+	.reviews_img img {
+		width: 100px;
+		height: 100px;
+	}
+	.course_program {
+		text-align: center;
+	}
+	.course_program h5{
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
+		padding-top: 10px;
+	}
+	.course_program ul {
+		padding: 0;
+		margin: 0;
+	}
+	.course_program li {
+		font-size: 10px;
+		list-style-position: inside 
+	}
+	.reviews_text h2 {
+		font-size: 22px;
+		padding-bottom: 20px;
+	}
+	.reviews_text p {
+		font-size: 13px;
+		padding: 0;
+		margin: 0;
+	}
+	.reviews_text p:last-child {
+		padding-bottom: 0;
+	}
+	.cost {
+		padding: 5px 0;
+
+		min-height: 250px;
+	}	
+	.cost p{
+		font-size: 20px;
+		margin: 0;
+		padding-top: 25px;
+	}
+	.cost span {
+		font-size: 13px;
+	}
+	.cost_information_block {
+		display: none;
+	}
+	.cost img {
+		display: none;
+	}
+	.block__main_text button{
+		width: 100%;
+		height: 40px;
+		margin: 0;
+		padding: 0;
+	}
+	.contacts_adaptive {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+	.footer_adaptive {
+		display: block;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.statistic_adaptive p {
+		padding: 0;
+		margin: 10px 0;
+		font-size: 8px;
+	}
+	.present_adaptive h2 {
+		font-size: 18px;
+	}
+	.about__frontend h2 {
+		font-size: 14px;
+	}
+	.frontend_info h2 {
+		font-size: 16px;
+	}
+	.reviews_text h2 {
+		font-size: 16px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	header {
+		display: block;
+	}
+	.open {
+		display: none;
+	}
+	.adaptive_logo {
+		display: none;
+		background: red;
+	}
+	.big_img_about {
+		display: block;
+	}
+	.about__us_frontend_text h2{
+		display: block;
+	}
+	.adaprive_about h2{
+		display: none;
+	}
+	.statistic_desc {
+		display: block;
+	}
+	.statistic_adaptive {
+		display: none;
+	}
+	.quotes {
+		display: block;
+	}
+	.cost img {
+		display: block;
+	}
+	.cost_information_block {
+		display: block;
+	}
+	.contacts_adaptive {
+		display: block;
+	}
+	footer {
+		display: block;
+	}
+	.footer_adaptive {
+		display: none;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
