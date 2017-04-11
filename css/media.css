@@ -2,20 +2,271 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.directions_img {
+		margin: 0 10px;
+	}
+}
 
+/* Ipad Pro Devices, Desktops */
+@media only screen and (max-width : 1024px) {
+	.nav li a {
+		font-size: 11px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+		.logo_mobile {
+		display: block;
+		background: url(../img/logo_mobile.png);
+		margin-top: 25px;
+		width: 100px;
+		height: 38px;
+	}
+	.nav {
+		display: none;
+	}
+	.open	{
+		position: fixed;
+		z-index: 10;
+		background: rgba(0,0,0,.4);
+		display: block;
+	}
+	.logo {
+		display: none;
+	}
+	.nav_button {
+		text-align: right;
+		float: right;
+		font-size: 11px;
+		text-transform: uppercase;
+		background: transparent;
+		padding: 8px 15px;
+		margin-top: 20px;
+	}
+	.header_button {
+		float: none;
+	}
+	.main_head_text p {
+		font-size: 11px;
+	}
+	.main_head_text h1 {
+			margin-top: 30px;
+			font-size: 16px;
+			animation: letter_spacing 1.5s linear forwards;
+			animation-delay: 1s;
+	}
+	@keyframes letter_spacing {
+		0% {
+			letter-spacing: 1px;
+			opacity: 0
+		}
+		100% {
+			letter-spacing: 3px;
+			opacity: 1;
+		}
+	}
+	section {
+		padding: 20px 0;
+	}
+	h2 {
+		font-size: 26px;
+		padding-bottom: 20px;
+		letter-spacing: 3px
+	}
+	.directions_img {
+		margin: 0 0 10px 0;
+	}
+	.directions h2 {
+		padding-bottom: 50px;
+	}
+	.directions_img p {
+		text-align: center;
+	}
+	.about_us_img {
+		display: none;
+	}
+	.about_us_text p {
+		font-size: 16px;
+	}
+	.statistic p {
+		font-size: 10px;
+	}
+	.what_we_love {
+		padding: 40px 0;
+	}
+	.what_we_love h3 {
+		font-size: 20px;
+		padding-bottom: 15px;
+	}
+	.what_we_love p {
+		font-size: 12px;
+		padding-bottom: 40px;
+	}
+	.button_gradient {
+		padding: 25px 60px;
+		font-size: 14px;
+	}
+	.start {
+		padding: 40px 0;
+	}
+	.start h2 {
+		font-size: 22px;
+	}
+	.start_img img {
+		float: left;
+	}
+	.start_img span {
+		padding-top: 0;
+	}
+	.start_info {
+		padding-top: 40px;
+	}
+	.special_offer {
+		padding: 40px 0;
+	}
+	.special_offer h2 {
+		font-size: 19px;
+		padding-bottom: 40px;
+	}
+	.special_offer p {
+		font-size: 14px;
+	}
+	footer {
+		padding: 40px 0;
+	}
+	.footer_info h4 {
+		font-size: 13px;
+		padding-bottom: 15px;
+	}
+	.footer_info p {
+		font-size: 12px;
+		padding-bottom: 20px;
+	}
+	.footer_info p:nth-child(3) {
+		padding-bottom: 0;
+	}
+	.phone {
+		font-size: 13px;
+		padding-bottom: 30px;
+	}
+	.footer_info h5 {
+		text-align: center;
+	}
+	.social {
+		text-align: center;
+	}
+	/* Why IT */
+	.why__it_head .nav_button {
+		margin-top: 16px;
+	}
+	.why__it_head_text h2 {
+		font-size: 22px;
+	}
+	.why__it_head_text p {
+		font-size: 11px;
+	}
+	.why_it_info {
+		padding-top: 40px;
+	}
+	.why_it_info p {
+		font-size: 11px;
+	}
+	.why_it_table h2 {
+		font-size: 16px;
+	}
+	.why_it_table table {
+		padding-bottom: 10px;
+	}
+	.why_it_table table td:nth-child(even) {
+    text-align: center;
+    width: 100%;
+	}
+	.why_it_table table td {
+		text-align: center;
+		font-size: 13px;
+		border-right: none;
+	}
+	.why_it_table p {
+		font-size: 10px;
+		padding-top: 10px;
+	}
+	.profession_dream h2 {
+		font-size: 15px;
+	}
+	/*Ivents*/
+	.bg_ivents .nav_button {
+		margin-top: 16px;
+	}
+	.top_ivents {
+		padding-top: 150px;
+	}
+	.top_ivents h2 {
+		font-size: 22px;
+	}
+	.ivents_info, .ivents_img {
+		padding: 0;
+	}
+	.ivents_info h2 {
+		font-size: 22px;
+		padding-top: 10px;
+	}
+	.ivents_info p {
+		font-size: 11px;
+	}
+	.ivents_block {
+		padding-top: 10px;
+	}
+	.ivents_block button {
+		font-size: 11px;
+		padding: 15px 20px
+	}
+	/*Reviews*/
+	.top_reviews .nav_button {
+		margin-top: 16px;
+	}
+	.top_reviews_text h2 {
+		font-size: 22px;
+	}
+	.reviews_wrap:before {
+		content: ""
+	}
+	.reviews_wrap {
+		text-align: center;
+		margin: 0 auto;
+		max-width: 100%;
+		background: none;
+		box-shadow: none;
+	}
+	.reviews_img {
+		float: none;
+	}
+	.reviews_img img {
+		border-radius: 0;
+		margin: 0;
+	}
+	.reviews_text h4 {
+		font-size: 18px;
+		padding: 10px 0;
+	}
+	.reviews_text span {
+		font-size: 12px;
+	}
+	.reviews_text p {
+		font-size: 11px;
+		padding: 0 10px;
+		padding-top: 10px;
+		padding-bottom: 40px;
+
+	}
+
+		
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	/*	.main_head {
-		 Размер фонового изображения уменьшен на 93%, чтобы улучшить скорость загрузки страницы  на устройствах, использующих мобильный Интернет 
-		background-image: url(../img/bg_header_mobile.jpg);
-	}*/
+
 
 }
 
@@ -43,13 +294,23 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
+@media only screen and (min-width : 769px) {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
+@media only screen and (min-width : 993px) {
+	.nav {
+		display: block;
+	}
+	.open {
+		display: none;
+	}
+	.logo {
+		display: block;
+	}
+	.logo_modile {
+		display: none;
+	}
 }
 
 /* Large Devices, Wide Screens */

@@ -14,12 +14,29 @@
 	<link rel="stylesheet" href="css/media.css" />
 </head>
 <body>
-	
+
+	<div class="open">
+		<span class="cls"></span>
+		<span>
+			<ul class="sub-menu">
+				<li><a href="#cours">Курсы</a></li>
+				<li><a href="why_it.html">Почему IT</a></li>
+				<li><a href="ivents.html">События</a></li>
+				<li><a href="reviews.html">Отзывы</a></li>
+				<!-- <li><a href="blog">Блог</a></li> -->
+				<li><a href="contacts.html">Контакты</a></li>
+				<li class="burger_text"><p>Звоните!</p><a href="tel:+38 095 05 35 007">+380950535007</a></li>
+			</ul>
+	  </span>
+		<span class="cls"></span>
+	</div>
+
 	<header class="main_head">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 logo_wrap">
+				<div class="col-xs-6 col-md-3">
 					<a href="index.html" class="logo"></a>
+					<a href="index.html" class="logo_mobile"></a>
 				</div>
 				<div class="col-md-6">
 					<ul class="nav">
@@ -31,7 +48,7 @@
 						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<button iddiv="box_1" class="mymagicoverbox nav_button" href="#">Бесплатная консультация</button>
 				</div>
 			</div>
@@ -42,16 +59,9 @@
 					<h1>выйди на новую образовательную высоту	<br>в gagarin it-school</h1>
 				</div>
 				<div class="col-md-12">
-					<button iddiv="box_5" class="mymagicoverbox nav_button header_button" href="#">Менторство</button>
+					<button iddiv="box_5" class="mymagicoverbox nav_button header_button" href="#">Подобрать курс</button>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-		<div class="row meetup">
-			<div class="col-md-12">
-				<a href="" iddiv="box_4" class="mymagicoverbox"><img src="img/meetup.png" height="79" width="89" alt=""></a>
-			</div>
-		</div>
 		</div>
 	</header>
 
@@ -153,85 +163,10 @@
 	</div> 
 	<!-- pop up -->
 
-
-	<!-- pop up 4 -->
-	<div align="center" id="pop__up"> 
-	<div id="myfond_gris" opendiv=""></div>
-
-		<div class="container">
-			<div class="row dribble_popup">
-			<div id="box_4" class="mymagicoverbox_dribble">
-				<div class="col-sm-6 dribble_popup_img">
-					<img src="img/dribble_popup.jpg" height="375" width="332" alt="">
-				</div>
-
-				<div class="col-sm-6 dribble_popup_form">
-					<div class="col-sm-1 col-sm-push-12">
-						<span id="dribble_modal_close"></span>
-					</div>
-					<h2>DRIBBBLE презентация</h2>
-					<p>Мы вышлем 100 вопросов	<br>по упаковке и презентацию <br>с Dribbble Мeetup вам на почту</p>
-					<form action="send_dribble.php" method="post">
-						<input type="text" name="name" id="name" placeholder="Ваше имя" required>
-						<input type="email" name="email" placeholder="Ваша почта" id="email" required>
-						<button>Получить файлы</button>
-					</form>
-				</div>
-			</div>
-			</div>
-		</div>
-	</div>
-	</div>	
-	<!-- pop up -->
-
-	<!-- pop up 5 -->
-	<div align="center" id="pop__up"> 
-	<div id="myfond_gris" opendiv=""></div>
-
-		<div class="container">
-		<div class="row">
-		<div class="col-sm-12">	
-			<div id="box_5" class="mymagicoverbox_fenetre">
-				<div class="row">
-					<div class="col-sm-1 col-sm-push-11">
-						<span id="dribble_modal_close"></span>	
-					</div>
-				</div>	
-				<div class="row">
-					<div class="col-sm-12 bg_popup_mentors">
-						<h2>мы ищем таланты</h2>
-						<p>У вас большой опыт в своей сфере?<br>
-						Поделитесь им с людьми, которые нуждаются в наставнике.<br>
-						Приглашаем вас на роль преподавателя<br>
-						и наставника в  IT-школу Gagarin. Нам необходимы энтузиасты,<br>
-						желающие сделать большой вклад в развитие IT-индустрии страны!</p>
-						<form action="send_mentors.php" method="post" class="form_mentors">
-							<input type="text" name="name" id="name" placeholder="Ваше имя" required>
-							<input type="email" name="email" placeholder="Ваша почта" id="email" required>
-							<input type="phone" name="phone" placeholder="Ваш телефон" id="phone" required>
-							<button align="center">ХОЧУ ПОМОГАТЬ ЛЮДЯМ</button>
-						</form>
-					</div>
-				</div>
-
-
-			</div>
-
-		</div>
-		</div>
-		</div>
-
-	</div> 
-	<!-- pop up -->
-
-
-
-	
-
 	
 
 	<section class="directions">
-		<a id="cours"></a>
+		<div id="cours"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -239,19 +174,19 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3 web_design directions_img">
+				<div class="col-xs-12 col-sm-6 col-md-3 web_design directions_img">
 					<a href="http://design.gagarin.dp.ua" target="_blank"><img src="img/web_vector.png" height="170" width="170" alt="">
 					<p>Web дизайн</p></a>
 				</div>
-				<div class="col-md-3 motion directions_img">
+				<div class="col-xs-12 col-sm-6 col-md-3 motion directions_img">
 					<a href="cours/motion.html" target="_blank"><img src="img/motion_vector.png" height="177" width="170" alt="">
 					<p>Motion дизайн</p></a>
 				</div>
-				<div class="col-md-3 frontend directions_img">
+				<div class="col-xs-12 col-sm-6 col-md-3 frontend directions_img">
 					<a href="cours/frontend.html" target="_blank"><img src="img/frontend_vector.png" height="170" width="170" alt="">
 					<p>Front-end</p></a>
 				</div>
-				<div class="col-md-3 adw directions_img">
+				<div class="col-xs-12 col-sm-6 col-md-3 adw directions_img">
 					<a href="http://contecst.gagarin.dp.ua" target="_blank"><img src="img/adw_vector.png" height="176" width="171" alt="">
 					<p>Контекстная реклама</p></a>
 				</div>
@@ -267,7 +202,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 about_us_img">
 					<img src="img/about_us.jpg" height="328" width="328" alt="">
 				</div>
 				<div class="col-md-8 about_us_text">
@@ -284,19 +219,19 @@
 	<section class="statistic">
 		<div class="container">
 			<div class="row" id="counts">
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<span class="spincrement">964</span>
 					<p>Часов лекций</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<span class="spincrement">10</span>
 					<p>Практикующих преподавателей</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<span class="spincrement">167</span>
 					<p>Студентов прошли курсы</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<span class="spincrement">90</span>
 					<p>реальных проектов было выполнено</p>
 				</div>
@@ -395,23 +330,24 @@
 	<footer>
 		<div class="container">
 			<div class="row footer_info">
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<a href="index.html" class="logo"></a>
+					<a href="index.html" class="logo_mobile"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<h4>Приходите в гости</h4>
 					<p>пр-кт Гагарина 13, оф. 102 Днепр, Украина</p>
 				</div>
-				<div class="col-md-2">
+				<div class="col-xs-6 col-md-2">
 					<h4>Позвоните нам</h4>
 					<p>+38 095 05 35 007</p>
 					<div iddiv="box_1" class="mymagicoverbox phone">Заказать звонок</div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-xs-6 col-md-2">
 					<h4>Пишите письма</h4>
 					<p>hello@gagarin.dp.ua</p>
 				</div>
-				<div class="col-md-2">
+				<div class="col-xs-12 col-md-2 social">
 					<h5>Подпишитесь на нас!</h5>
 					<span class="fa-stack fa-1x">
 						<a href="https://vk.com/itgagarin" target="_blank">
@@ -454,6 +390,7 @@
 	<script src="libs/jquery/jquery.min.js"></script>
 	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="libs/numbers-count/jquery.spincrement.min.js"></script>
+	<script src="libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
 	<script src="js/common.js"></script>
 	<script>
 		// numbers count

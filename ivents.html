@@ -14,11 +14,29 @@
 	<link rel="stylesheet" href="css/media.css" />
 </head>
 <body>
+
+	<div class="open">
+		<span class="cls"></span>
+		<span>
+			<ul class="sub-menu">
+				<li><a href="#cours">Курсы</a></li>
+				<li><a href="why_it.html">Почему IT</a></li>
+				<li><a href="ivents.html">События</a></li>
+				<li><a href="reviews.html">Отзывы</a></li>
+				<!-- <li><a href="blog">Блог</a></li> -->
+				<li><a href="contacts.html">Контакты</a></li>
+				<li class="burger_text"><p>Звоните!</p><a href="tel:+38 095 05 35 007">+380950535007</a></li>
+			</ul>
+	  </span>
+		<span class="cls"></span>
+	</div>
+
 	<header class="bg_ivents">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<a href="index.html" class="logo"></a>
+					<a href="index.html" class="logo_mobile"></a>
 				</div>
 				<div class="col-md-6">
 					<ul class="nav">
@@ -30,7 +48,7 @@
 						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<button iddiv="box_1" class="mymagicoverbox nav_button" href="#">Бесплатная консультация</button>
 				</div>
 			</div>
@@ -126,10 +144,10 @@
 	<section class="ivents">
 		<div class="container">
 			<div class="row ivents_block">
-				<div class="col-md-3 ivents_img">
+				<div class="col-xs-12 col-md-3 ivents_img">
 					<img src="img/ivent4.png" alt="">
 				</div>
-				<div class="col-md-9 ivents_info">
+				<div class="col-xs-12 col-md-9 ivents_info">
 					<h2>Воркшоп: Dribbble Meetup!</h2>
 					<span>1 апреля</span>
 					<p>Noosphere собирает дизайнеров на Dribbble Meetup! Мы обсудим последние тренды в сферах:<br><br>
@@ -149,10 +167,10 @@
 			</div>
 
 			<div class="row ivents_block">
-				<div class="col-md-3 ivents_img">
+				<div class="col-xs-12 col-md-3 ivents_img">
 					<img src="img/ivent3.png" alt="">
 				</div>
-				<div class="col-md-9 ivents_info">
+				<div class="col-xs-12 col-md-9 ivents_info">
 					<h2>Воркшоп: Дизайн старт</h2>
 					<span>12 марта</span>
 					<p>Хотите стать дизайнером и научиться создавать качественный продукт?<br><br>
@@ -187,10 +205,10 @@
 			</div>
 
 			<div class="row ivents_block">
-				<div class="col-md-3 ivents_img">
+				<div class="col-xs-12 col-md-3 ivents_img">
 					<img src="img/ivent2.png" alt="">
 				</div>
-				<div class="col-md-9 ivents_info">
+				<div class="col-xs-12 col-md-9 ivents_info">
 					<h2>Воркшоп: Создание посадочных страниц</h2>
 					<span>11 февраля. Пр-кт Яворницкого 17, коворкинг Нумо</span>
 					<p>Узнай, как быстро сделать лендинг, без участия программиста!<br>
@@ -209,10 +227,10 @@
 			</div>
 
 			<div class="row ivents_block">
-				<div class="col-md-3 ivents_img">
+				<div class="col-xs-12 col-md-3 ivents_img">
 					<img src="img/ivent1.png" alt="">
 				</div>
-				<div class="col-md-9 ivents_info">
+				<div class="col-xs-12 col-md-9 ivents_info">
 					<h2>Воркшоп: MOTION МАРАФОН</h2>
 					<span>10 декабря. Пр-кт Яворницкого 17, коворкинг Нумо</span>
 					<p>Мы знаем как занять твою субботу!
@@ -238,23 +256,24 @@
 	<footer>
 		<div class="container">
 			<div class="row footer_info">
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<a href="index.html" class="logo"></a>
+					<a href="index.html" class="logo_mobile"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-xs-6 col-md-3">
 					<h4>Приходите в гости</h4>
 					<p>пр-кт Гагарина 13, оф. 102 Днепр, Украина</p>
 				</div>
-				<div class="col-md-2">
+				<div class="col-xs-6 col-md-2">
 					<h4>Позвоните нам</h4>
 					<p>+38 095 05 35 007</p>
 					<div iddiv="box_1" class="mymagicoverbox phone">Заказать звонок</div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-xs-6 col-md-2">
 					<h4>Пишите письма</h4>
 					<p>hello@gagarin.dp.ua</p>
 				</div>
-				<div class="col-md-2">
+				<div class="col-xs-12 col-md-2 social">
 					<h5>Подпишитесь на нас!</h5>
 					<span class="fa-stack fa-1x">
 						<a href="https://vk.com/itgagarin" target="_blank">
@@ -296,6 +315,7 @@
 	
 	<script src="libs/jquery/jquery.min.js"></script>
 	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
 	<script src="js/common.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->

@@ -110,6 +110,135 @@ p
 	height: 80px
 	margin-top: 25px
 
+// Burger
+.open 
+	position: absolute
+	top: 16px
+	left: 40%
+	width: 40px
+	height: 48px
+	display: none
+	cursor: pointer
+	-webkit-transition: opacity 0.2s linear
+	transition: opacity 0.2s linear
+	&:hover 
+		opacity: 1 
+	span 
+		display: block
+		float: left
+		clear: both
+		height: 3px
+		width: 30px
+		background-color: #1b7395
+		position: absolute
+		right: 5px
+		top: 3px
+		overflow: hidden
+		-webkit-transition: all 0.4s ease
+		transition: all 0.4s ease
+		&:nth-child(1) 
+			margin-top: 5px
+			z-index: 9
+		&:nth-child(2) 
+			margin-top: 20px
+		&:nth-child(3) 
+			margin-top: 35px 
+
+.sub-menu
+	-webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+	transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+	height: 0
+	width: 0
+	right: 0
+	top: 0
+	position: absolute
+	background-color: rgba(31, 31, 31, 0.9)
+	border-radius: 50% 0 0 50%
+	z-index: 18
+	overflow: hidden
+	li
+		display: block
+		float: left
+		clear: both
+		height: auto
+		margin-left: 80px
+		-webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+		transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+		&:first-child
+			margin-top: 170px
+		&:nth-child(1)
+			-webkit-transition-delay: 0.05s
+		&:nth-child(2) 
+			-webkit-transition-delay: 0.1s
+		&:nth-child(3) 
+			-webkit-transition-delay: 0.15s
+		&:nth-child(4) 
+			-webkit-transition-delay: 0.2s
+		&:nth-child(5) 
+			-webkit-transition-delay: 0.25s
+		a 
+			color: #fff
+			font-size: 13px
+			width: 220px
+			display: block
+			float: left
+			line-height: 10px
+			&:active
+				color: #29abe2
+			&:first-child
+				margin-top: 20px
+			&:last-child
+				font-size: 16px
+				font-weight: 700
+
+.oppenned 
+	.sub-menu
+		opacity: 1
+		height: auto
+		width: 400px
+		padding-bottom: 40px 
+		right: -70%
+	span
+		&:nth-child(2) 
+			overflow: visible 
+		&:nth-child(1), 
+		&:nth-child(3) 
+			z-index: 100
+			-webkit-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			transform: rotate(45deg)
+		&:nth-child(1) 
+			-webkit-transform: rotate(45deg) translateY(12px) translateX(12px)
+			-ms-transform: rotate(45deg) translateY(12px) translateX(12px)
+			transform: rotate(45deg) translateY(12px) translateX(12px)
+		&:nth-child(2) 
+			height: 400px
+			// width: 400px
+			width: 100vw
+			// right: -240px	
+			top: -160px
+			border-radius: 50%
+			background-color: rgba(252, 252, 252, 0)
+		&:nth-child(3)
+			-webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px)
+			-ms-transform: rotate(-45deg) translateY(-10px) translateX(10px)
+			transform: rotate(-45deg) translateY(-10px) translateX(10px) 
+	li
+		text-align: center
+		a
+			padding-right: 65px
+			text-align: right
+.sub-menu
+	.block__main_text 
+		padding-top: 15px
+		width: 160px
+.burger_text
+	color: #fff
+	width: 200px
+	p
+		margin: 0
+		padding: 20px 0 5px 45px
+
 .nav
 	padding-top: 40px 
 	text-align: center
@@ -264,9 +393,9 @@ textarea
 		position: relative
 		padding-top: 40px
 	&_img
-		width: 267px
+		min-width: 267px
 		height: 300px
-		margin: 0 10px
+		margin: 10px 0
 		img
 			display: block
 			margin: 40px auto

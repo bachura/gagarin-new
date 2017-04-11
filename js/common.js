@@ -32,23 +32,28 @@ $(document).ready(function() {
 
 
 	// Scroll to id
-	var $page = $("html, body");
-	$('a[href*="#"]').click(function() {
-	    $page.animate({
-	        scrollTop: $($.attr(this, "href")).offset().top
-	    }, 650);
-	    return false;
-	});
+	$("a[href*='#']").mPageScroll2id();
+
 
 	// Read more
-	// $(".more").on("click", function(){
-	// 	$('.ivents_hidden').toggle().toggleClass("vis");
-	// 	$('.more').css("display","none");
-	// })
-
 	$('.ivents_hidden').hide();
 	$('.more').click(function(){
 	    $(this).next().toggle()
+	});
+
+	// Burger
+	$(document).delegate('.open', 'click', function(event){
+	$(this).addClass('oppenned');
+		event.stopPropagation();
+	});
+	
+	$(document).delegate('body', 'click', function(event) {
+		$('.open').removeClass('oppenned');
+	});
+	
+	$(document).delegate('.oppenned', 'click', function(event){
+		$('.open').removeClass('oppenned');
+		event.stopPropagation();
 	});
 
 
