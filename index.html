@@ -32,34 +32,38 @@
 	</div>
 
 	<header class="main_head">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-6 col-md-3">
-					<a href="index.html" class="logo"></a>
-					<a href="index.html" class="logo_mobile"></a>
-				</div>
-				<div class="col-md-6">
-					<ul class="nav">
-						<li><a href="#cours">Курсы</a></li>
-						<li><a href="why_it.html">Почему IT</a></li>
-						<li><a href="ivents.html">События</a></li>
-						<li><a href="reviews.html">Отзывы</a></li>
-						<!-- <li><a href="blog">Блог</a></li> -->
-						<li><a href="contacts.html">Контакты</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-6 col-md-3">
-					<button iddiv="box_1" class="mymagicoverbox nav_button" href="#">Бесплатная консультация</button>
+		<nav id="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-md-3">
+						<a href="index.html" class="logo"></a>
+						<a href="index.html" class="logo_mobile"></a>
+					</div>
+					<div class="col-md-6">
+						<ul class="nav">
+							<li><a href="#cours">Курсы</a></li>
+							<li><a href="why_it.html">Почему IT</a></li>
+							<li><a href="ivents.html">События</a></li>
+							<li><a href="reviews.html">Отзывы</a></li>
+							<!-- <li><a href="blog">Блог</a></li> -->
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<button iddiv="box_1" class="mymagicoverbox nav_button" href="#">Бесплатная консультация</button>
+					</div>
 				</div>
 			</div>
+		</nav>
 
+		<div class="container">
 			<div class="row main_head_text">
 				<div class="col-md-10 col-md-push-1">
 					<p>Самая эффективная система обучения в сфере IT</p>
 					<h1>выйди на новую образовательную высоту	<br>в gagarin it-school</h1>
 				</div>
 				<div class="col-md-12">
-					<button iddiv="box_5" class="mymagicoverbox nav_button header_button" href="#">Подобрать курс</button>
+					<button iddiv="box_2" class="mymagicoverbox nav_button header_button" href="#">Подобрать курс</button>
 				</div>
 			</div>
 		</div>
@@ -70,7 +74,6 @@
 		<i class="fa fa-chevron-up"></i>
 	</a> -->
 	
-
 	<!-- pop up -->
 	<div align="center" id="pop__up"> 
 	<div id="myfond_gris" opendiv=""></div>
@@ -87,22 +90,20 @@
 				</div>	
 				<div class="row">
 					<div class="col-sm-12">
-						<p>Бесплатная консультация</p>	
+						<h2>Бесплатная консультация</h2>
+						<p>Наш консультант свяжется с вами в ближайшее время.</p>	
 						<div class="mymagicoverbox_fenetreinterieur">
 						<div align="center">
 							<form action="send_consultation.php" method="post">
-								<div class="col-sm-12 col-md-5 col-md-push-1">
-									<input type="text" name="name" id="name" placeholder="Имя" required>
+								<div class="col-xs-12 col-sm-5 col-sm-push-1">
+									<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+									<input type="email" name="email" placeholder="Ваша почта" id="email" required>
+									<input type="number" name="phone" id="phone" placeholder="Ваш телефон" required>
 								</div>
-								<div class="col-sm-12 col-md-5 col-md-push-1">
-									<input type="email" name="email" placeholder="Email" id="email"required>
-								</div>
-								<div class="col-sm-12">
+								<div class="col-xs-12 col-sm-6">
 									<textarea name="message" placeholder="Сообщение" required></textarea>
 								</div>
-								<div class="col-sm-12">
-									<button class="btn_form" target="_blank">Получить консультацию</button>
-								</div>
+								<button class="btn_form" target="_blank">Получить консультацию</button>
 							</form>
 						</div>
 						</div>
@@ -116,7 +117,6 @@
 
 	</div> <!-- pop up -->
 
-	
 	<!-- pop up 2 -->
 	<div align="center" id="pop__up"> 
 	<div id="myfond_gris" opendiv=""></div>
@@ -133,22 +133,20 @@
 				</div>	
 				<div class="row">
 					<div class="col-sm-12">
-						<p>Подобрать курс</p>	
+						<h2>Подобрать курс</h2>
+						<p>Наш консультант свяжется с вами в ближайшее время.</p>	
 						<div class="mymagicoverbox_fenetreinterieur">
 						<div align="center">
 							<form action="send_cours.php" method="post">
-								<div class="col-sm-12 col-md-5 col-md-push-1">
-									<input type="text" name="name" id="name" placeholder="Имя" required>
+								<div class="col-xs-12 col-sm-5 col-sm-push-1">
+									<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+									<input type="email" name="email" placeholder="Ваша почта" id="email" required>
+									<input type="number" name="phone" id="phone" placeholder="Ваш телефон" required>
 								</div>
-								<div class="col-sm-12 col-md-5 col-md-push-1">
-									<input type="email" name="email" placeholder="Email" id="email"required>
-								</div>
-								<div class="col-sm-12">
+								<div class="col-xs-12 col-sm-6">
 									<textarea name="message" placeholder="Сообщение" required></textarea>
 								</div>
-								<div class="col-sm-12">
-									<button class="btn_form" target="_blank">Получить консультацию</button>
-								</div>
+								<button class="btn_form" target="_blank">Получить консультацию</button>
 							</form>
 						</div>
 						</div>
@@ -160,10 +158,7 @@
 		</div>
 		</div>
 
-	</div> 
-	<!-- pop up -->
-
-	
+	</div> <!-- pop up -->
 
 	<section class="directions">
 		<div id="cours"></div>
@@ -314,7 +309,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-push-1">
-					<h2>Мы абсолютно уверены в пользе и эффективности наших программ обучения</h2>
+					<h2>Мы абсолютно уверены в пользе <br>и эффективности наших программ обучения</h2>
 				</div>
 				<div class="col-md-8 col-md-push-2">
 					<p>Поэтому мы гарантируем 100% возврат средств, если в течении 3 дней 

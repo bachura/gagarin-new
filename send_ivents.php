@@ -10,8 +10,18 @@ $email = htmlspecialchars($email);
 $email = urldecode($email);
 $email = trim($email);
 
+$phone = $_POST['phone'];
+$phone = htmlspecialchars($phone);
+$phone = urldecode($phone);
+$phone = trim($phone);
 
-if (mail("hello@gagarin.dp.ua", "Gagarin It-school Подписка на рассылку", "Имя: ".$name. "\nE-mail: ".$email , "From: hello@gagarin.dp.ua \r\n"))
+$message = $_POST['message'];
+$message = htmlspecialchars($message);
+$message = urldecode($message);
+$message = trim($message);
+
+
+if (mail("hello@gagarin.dp.ua", "Gagarin It-school Подписка на рассылку событий", "Имя: ".$name. "\nE-mail: ".$email. "\nТелефон " .$phone. "\nСообщение: " .$contacts_message , "From: hello@gagarin.dp.ua \r\n"))
 	{	echo "Сообщение отправлено, все хорошо!";  
 		header("Location: ./index.html");
 	} else { 
@@ -20,3 +30,4 @@ if (mail("hello@gagarin.dp.ua", "Gagarin It-school Подписка на рас�
 
 
 ?>
+

@@ -34,12 +34,11 @@ $(document).ready(function() {
 	// Scroll to id
 	$("a[href*='#']").mPageScroll2id();
 
-
-	// Read more
-	$('.ivents_hidden').hide();
-	$('.more').click(function(){
-	    $(this).next().toggle()
-	});
+	// Read more my
+	// $('.ivents_hidden').hide();
+	// $('.more').click(function(){
+	//     $(this).next().toggle()
+	// });
 
 	// Burger
 	$(document).delegate('.open', 'click', function(event){
@@ -56,5 +55,28 @@ $(document).ready(function() {
 		event.stopPropagation();
 	});
 
+	//Fixed header 
+	var nav = document.getElementById("navigation");
+	var current_position = 0;
+	var window_position;
 
+	window.addEventListener('scroll', function() {
+	  window_position = window.pageYOffset;
+
+	  if (window_position > current_position) { // Scroll down
+	    nav.classList.add("hideNav");
+	  } else { // Scroll up
+	    nav.classList.remove("hideNav");
+	    nav.classList.add("showNav");
+	  }
+	  current_position = window_position;
+	  if (current_position == 0) {
+	  	$(".showNav").css("background", "transparent");
+	  } else {
+	  	$(".showNav").css("background", "#021246");
+	  }
+	});
+	
+	
+	
 }); 

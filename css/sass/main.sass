@@ -1,11 +1,18 @@
 @import "bourbon/bourbon"
 @import url(normalize.css)
 
-
 $main-color: #10ade4
 $dark-color: #353535
 $light-color: #f8f8f8
 
+//Убрать стрелки у формы телефона
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance: none
+// Для Firefox
+input
+	&[type='number']
+		-moz-appearance: textfield
 
 //Убрать свечение кнопок в браузере
 button:active, button:focus
@@ -15,7 +22,6 @@ button::-moz-focus-inner
 
 html
 	overflow-x: hidden
-
 body
 	padding: 0
 	margin: 0
@@ -25,7 +31,6 @@ body
 	line-height: 1.4
 	overflow-x: hidden
 	-webkit-overflow-scrolling: touch /*Убирает скролл у ios*/
-
 textarea,
 input,
 	&:focus
@@ -64,21 +69,22 @@ h5
 p
 	margin: 0
 	padding: 0
+
 .main_head
 	background: url(../img/bg_header.jpg) no-repeat top center
 	background-size: cover
 	// &::before
-	// 	content: ''
-	// 	position: absolute
-	// 	background: #fff
-	// 	height: 200px
-	// 	bottom: -140px
-	// 	left: -200px
-	// 	right: -200px
-	// 	border-radius: 100%
+	//  content: ''
+	//  position: absolute
+	//  background: #fff
+	//  height: 200px
+	//  bottom: -140px
+	//  left: -200px
+	//  right: -200px
+	//  border-radius: 100%
 	&_text
 		text-align: center
-		padding-top: 140px
+		padding-top: 240px
 		p
 			font-family: "OpenSans-Bold", sans-serif
 			font-weight: 700
@@ -102,13 +108,12 @@ p
 		100%
 			letter-spacing: 6px
 			opacity: 1
-
 .logo
 	background: url(../img/logo.png)
 	display: block
 	width: 210px
 	height: 80px
-	margin-top: 25px
+	margin-top: 15px
 
 // Burger
 .open 
@@ -143,7 +148,6 @@ p
 			margin-top: 20px
 		&:nth-child(3) 
 			margin-top: 35px 
-
 .sub-menu
 	-webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)
 	transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)
@@ -190,7 +194,6 @@ p
 			&:last-child
 				font-size: 16px
 				font-weight: 700
-
 .oppenned 
 	.sub-menu
 		opacity: 1
@@ -213,9 +216,7 @@ p
 			transform: rotate(45deg) translateY(12px) translateX(12px)
 		&:nth-child(2) 
 			height: 400px
-			// width: 400px
 			width: 100vw
-			// right: -240px	
 			top: -160px
 			border-radius: 50%
 			background-color: rgba(252, 252, 252, 0)
@@ -239,8 +240,24 @@ p
 		margin: 0
 		padding: 20px 0 5px 45px
 
+nav 
+	position: fixed
+	top: 0
+	background: transparent
+	width: 100%
+	height: 110px
+	transition: all 0.2s linear
+	z-index: 30
+.showNav
+	top: 0
+	z-index: 30
+	background: #021246
+.hideNav
+	top: -120px
+	background: transparent
+
 .nav
-	padding-top: 40px 
+	padding-top: 30px 
 	text-align: center
 	li
 		display: inline-block
@@ -260,7 +277,7 @@ p
 	background: transparent
 	border: 2px solid $main-color
 	padding: 15px 20px
-	margin-top: 40px
+	margin-top: 30px
 	&:hover
 		transition: ease .3s
 		background: $main-color
@@ -271,7 +288,6 @@ p
 	font-family: "OpenSans", sans-serif
 	border-radius: 40px
 	padding: 20px 70px
-
 	letter-spacing: 2px
 	font-weight: 600
 	&:hover
@@ -282,10 +298,10 @@ p
 // Pop up
 #modal_close
 	position: absolute
-	right: 40px
-	top: 20px
-	width: 30px
-	height: 30px
+	right: 30px
+	top: 15px
+	width: 25px
+	height: 25px
 	z-index: 10
 	cursor: pointer
 	&:before, 
@@ -293,18 +309,15 @@ p
 		position: absolute
 		left: 15px
 		content: ' '
-		height: 33px
+		height: 20px
 		width: 2px
 		background: $main-color
 	&:before
 		transform: rotate(45deg)
 	&:after
 		transform: rotate(-45deg)
-.mymagicoverbox
-	// padding: 0 10px 10px 0
-	// margin: 0 0 10px 40px
 .mymagicoverbox_fenetre
-	width: 680px
+	width: 570px
 	left: -340px
 	z-index: 9999
 	position: fixed
@@ -312,22 +325,24 @@ p
 	top: 20px
 	text-align: center
 	display: none
-	background-color: #ffffff
+	background: url(../img/bg_popup.jpg) no-repeat
+	h2
+		font-family: "OpenSans-Bold", sans-serif
+		font-weight: 700
+		font-size: 32px
+		color: #fff
+		letter-spacing: 0
+		padding-top: 50px
+		padding-bottom: 10px
 	p
-		margin: 70px 0 10px 0
-		padding: 0 19px
 		text-align: center
-		font-family: "Montserrat-SemiBold", sans-serif
-		font-size: 18px
-		text-transform: uppercase
-		color: #413d4b
+		font-size: 13px
+		color: #fff
 .mymagicoverbox_fenetreinterieur
 	height: 400px
 	text-align: center
 	overflow: auto
-	background-color: #ffffff
 	margin-top: 10px
-
 #myfond_gris
 	display: none
 	background-color: #000000
@@ -341,54 +356,53 @@ p
 	right: 0
 	left: 0
 input
-	background: none
-	border: none
-	border-bottom: 2px solid $dark-color
-	color: $dark-color
-	text-align: center
-	font-size: 18px
-	font-family: "Montserrat-Light", sans-serif
-	padding-top: 30px
-	padding-bottom: 5px
-	margin-bottom: 45px
-	width: 100%
+	background: #fff
+	border: 1px solid #020740
+	border-radius: 5px
+	color: #020740
+	text-align: left
+	font-size: 13px
+	padding: 10px 0
+	padding-left: 10px
+	margin-bottom: 5px
+	margin-right: 5px
+	width: 88%
+	float: left
 	&::placeholder
-		color: $dark-color
+		color: #020740
 	&:focus
-		border-bottom: 2px solid $main-color
-		color: $main-color
+		color: #020740
 		transition: ease .4s
 textarea
-	font-family: "Montserrat-Light", sans-serif
-	font-size: 18px
-	background: none
-	width: 83%
-	min-height: 170px
-	border: 2px solid $dark-color
+	font-size: 13px
+	background: #fff
+	width: 100%
+	min-height: 120px
+	border: 1px solid #020740
+	border-radius: 6px
 	resize: none
 	padding: 15px 10px
 	&:focus
-		color: $main-color
+		color: #020740
 	&::placeholder
-		color: $dark-color
+		color: #020740
 		&:focus
 			color: transparent
 .btn_form
 	text-align: center
-	text-transform: uppercase
-	font-weight: 800
+	font-weight: 400
 	font-size: 16px
-	color: $main-color
-	background: transparent
-	padding: 20px 55px
+	color: #fff
+	background: #020740
+	padding: 15px 55px
 	margin-top: 25px
-	border: 2px solid $main-color
+	border: #020740
+	border-radius: 6px
 	&:hover
 		transition: ease .3s
-		background: $main-color
-		color: $light-color
+		background: #020740 * 0.9
 
-.directions 
+.directions
 	h2
 		position: relative
 		padding-top: 40px
@@ -402,6 +416,7 @@ textarea
 		p
 			font-size: 20px
 			color: #fff
+			text-align: center
 .web_design
 	background: url(../img/web.jpg) no-repeat center center
 .motion
@@ -468,6 +483,7 @@ textarea
 		background: #00ccff * 0.9
 .button_gradient_position
 	text-align: center
+
 .start
 	padding: 80px 0
 	background: url(../img/start.jpg) no-repeat center center
@@ -499,10 +515,12 @@ textarea
 		font-size: 14px
 		color: $light-color
 		p
-			padding-left: 10px	
+			padding-left: 10px
+
 .special_offer
 	padding: 80px 0
 	h2
+		font-size: 38px
 		letter-spacing: 0
 		padding-bottom: 60px
 	p
@@ -556,7 +574,6 @@ footer
 		transition: linear .2s
 		color: $main-color
 
-
 /* WHY IT  ----------------------- */
 .why_it_info
 	padding-top: 80px
@@ -565,7 +582,7 @@ footer
 	background-size: cover
 	&_text
 		text-align: center
-		padding-top: 140px
+		padding-top: 240px
 		h2
 			font-family: "OpenSans-Light", sans-serif
 			font-weight: 100
@@ -613,7 +630,6 @@ footer
 .profession_dream
 	padding-bottom: 80px
 
-
 /* REVIEWS ----------------------- */
 .bg_reviews
 	background: #fff
@@ -621,7 +637,7 @@ footer
 	background: url(../img/bg_reviews.jpg) no-repeat center center
 	background-size: cover
 	&_text
-		padding-top: 230px
+		padding-top: 330px
 		h2
 			font-family: "OpenSans-Light", sans-serif
 			font-weight: 100
@@ -633,7 +649,6 @@ footer
 
 .block_reviews
 	padding-top: 80px
-
 .reviews_wrap
 	padding: 0
 	margin: 0
@@ -657,7 +672,6 @@ footer
 		margin-right: 25px
 		width: 253px
 		height: 253px
-
 .reviews_text
 	h4
 		position: relative
@@ -680,9 +694,8 @@ footer
 .bg_ivents
 	background: url(../img/bg_reviews.jpg) no-repeat center center
 	background-size: cover
-
 .top_ivents
-	padding-top: 200px
+	padding-top: 310px
 	h2
 		font-family: "OpenSans-Light", sans-serif
 		font-weight: 100
@@ -691,7 +704,6 @@ footer
 		text-transform: uppercase
 		text-align: center
 		line-height: 1.2
-
 .ivents
 	&_block
 		padding: 40px
@@ -732,20 +744,19 @@ footer
 				border: 2px solid $main-color * 0.9
 				color: $main-color * 0.9
 				transition: ease .3s
-
 .ivents_hidden
 	display: none
 	padding-top: 15px
 	li
 		list-style-type: disc
+
 /* CONTACTS ----------------------- */
 .bg_contacts
 	background: url(../img/bg_contacts.jpg) no-repeat center center
 	background-size: cover
 	position: relative
-
 .top_contacts
-	padding-top: 120px
+	padding-top: 220px
 	h2
 		font-family: "OpenSans-Light", sans-serif
 		font-weight: 100
@@ -761,7 +772,6 @@ footer
 		font-size: 18px
 		font-weight: 800
 		color: $main-color
-
 .contacts_wrap
 	position: relative
 	top: -150px
@@ -792,10 +802,58 @@ footer
 				font-size: 25px
 				letter-spacing: 2px
 				padding-bottom: 20px
+			input
+				background: none
+				border: none
+				border-bottom: 2px solid $dark-color
+				border-radius: 0
+				color: $dark-color
+				text-align: center
+				font-size: 18px
+				font-family: "Montserrat-Light", sans-serif
+				padding-top: 30px
+				padding-bottom: 5px
+				margin-bottom: 45px
+				width: 100%
+				&::placeholder
+					color: $dark-color
+				&:focus
+					border-bottom: 2px solid $main-color
+					color: $main-color
+					transition: ease .4s
+			textarea
+				font-family: "Montserrat-Light", sans-serif
+				font-size: 18px
+				background: none
+				width: 83%
+				min-height: 170px
+				border: 2px solid $dark-color
+				border-radius: 0
+				resize: none
+				padding: 5px 10px
+				&:focus
+					color: $main-color
+				&::placeholder
+					color: $dark-color
+					&:focus
+						color: transparent
+			.btn_form
+				text-align: center
+				text-transform: uppercase
+				font-weight: 800
+				font-size: 16px
+				color: $main-color
+				background: transparent
+				padding: 20px 55px
+				margin-top: 25px
+				border: 2px solid $main-color
+				&:hover
+					transition: ease .3s
+					background: $main-color
+					color: $light-color
 	&_map
 		min-height: 400px
 		padding: 0
-
 .contacts_form
 	input
 		width: 30%
@@ -841,146 +899,17 @@ footer
 			color: #fff
 			background: $main-color
 
-
-.meetup
-	position: fixed
-	z-index: 15
-	left: 5px
-	bottom: 25px
-
-.dribble_popup
-	padding: 0
-	&_img
-		padding: 0
-		float: left
-	&_form
-		h2
-			font-family: "BebasNeue-Bold", sans-serif
-			font-weight: 800
-			letter-spacing: 0
-			font-size: 37px
-			color: #020740
-			text-transform: uppercase
-			text-align: left
-			float: left
-			padding-left: 40px
-			padding-top: 30px
-			padding-bottom: 15px
-			line-height: 1
-		p
-			font-size: 13px
-			color: #000
-			float: left
-			text-align: left
-			padding-left: 40px
-			padding-bottom: 15px
-		form
-			padding-left: 15px
-		input
-			border: 1px solid #020740
-			border-radius: 5px
-			width: 80%
-			padding: 10px 	
-			text-align: left
-			margin: 4px 0
-			&::placeholder
-				font-size: 13px
-				color: #2e2e2e
-			&:focus
-				color: #2e2e2e
-		button
-			text-transform: uppercase
-			background: #020740
-			border: transparent
-			border-radius: 5px
-			color: #fff
-			font-size: 13px
-			padding: 15px 10px
-			width: 80%
-			margin-top: 4px
-
-
-#dribble_modal_close
-	position: absolute
-	right: 40px
-	top: 20px
-	width: 25px
-	height: 25px
-	z-index: 10
-	cursor: pointer
-	&:before, 
-	&:after
-		position: absolute
-		left: 15px
-		content: ' '
-		height: 20px
-		width: 2px
-		background: #020740
-	&:before
-		transform: rotate(45deg)
-	&:after
-		transform: rotate(-45deg)
-
-.mymagicoverbox_dribble
-	width: 600px
-	left: -340px
-	z-index: 9999
-	position: fixed
-	margin-left: 50%
-	top: 20px
-	text-align: center
-	display: none
-	background-color: #ffffff
-
-.bg_popup_mentors
-	h2
-		font-family: "BebasNeue-Bold", sans-serif
-		font-weight: 800
-		font-size: 47px
-		color: #020740
-		padding-top: 60px
-		padding-bottom: 20px
-	p
-		font-size: 13px
-		margin-top: 0
-		text-transform: none
-
-.form_mentors
-	padding-left: 30px
-	padding-top: 25px
-	padding-bottom: 40px
-	input
-		width: 30%
-		float: left
-		border: 1px solid #020740
-		border-radius: 5px
-		margin: 0 5px
-		padding: 10px
-		text-align: left
-	button
-		background: #020740
-		padding: 15px 40px
-		text-align: center
-		margin: 0 auto
-		color: #fff
-		font-size: 13px
-		border: none
-		border-radius: 5px
-		margin-right: 30px
-		margin-top: 20px
-
-
+// Scroll top
 // .scroll_top
-// 	position: fixed
-// 	z-index: 15
-// 	right: 40px
-// 	bottom: 40px
-// 	.fa-chevron-up
-// 		color: $main-color
-// 		z-index: 2
-// 		font-size: 43px
-// 	.fa-circle
-// 		color: $dark-color
-// 		font-size: 50px
-// 		z-index: -1
-	
+//  position: fixed
+//  z-index: 15
+//  right: 40px
+//  bottom: 40px
+//  .fa-chevron-up
+//    color: $main-color
+//    z-index: 2
+//    font-size: 43px
+//  .fa-circle
+//    color: $dark-color
+//    font-size: 50px
+//    z-index: -1

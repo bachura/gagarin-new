@@ -16,7 +16,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-		.logo_mobile {
+	.logo_mobile {
 		display: block;
 		background: url(../img/logo_mobile.png);
 		margin-top: 25px;
@@ -26,9 +26,12 @@
 	.nav {
 		display: none;
 	}
+	.showNav {
+		background: transparent !important;
+	}
 	.open	{
 		position: fixed;
-		z-index: 10;
+		z-index: 1000;
 		background: rgba(0,0,0,.4);
 		display: block;
 	}
@@ -46,6 +49,7 @@
 	}
 	.header_button {
 		float: none;
+		padding: 15px 50px;
 	}
 	.main_head_text p {
 		font-size: 11px;
@@ -156,12 +160,14 @@
 	.social {
 		text-align: center;
 	}
+	
 	/* Why IT */
 	.why__it_head .nav_button {
 		margin-top: 16px;
 	}
 	.why__it_head_text h2 {
 		font-size: 22px;
+		padding-bottom: 20px;
 	}
 	.why__it_head_text p {
 		font-size: 11px;
@@ -194,12 +200,13 @@
 	.profession_dream h2 {
 		font-size: 15px;
 	}
+	
 	/*Ivents*/
 	.bg_ivents .nav_button {
 		margin-top: 16px;
 	}
 	.top_ivents {
-		padding-top: 150px;
+		padding-top: 320px;
 	}
 	.top_ivents h2 {
 		font-size: 22px;
@@ -221,9 +228,13 @@
 		font-size: 11px;
 		padding: 15px 20px
 	}
+	
 	/*Reviews*/
 	.top_reviews .nav_button {
 		margin-top: 16px;
+	}
+	.top_reviews_text {
+		padding-top: 280px;
 	}
 	.top_reviews_text h2 {
 		font-size: 22px;
@@ -257,11 +268,94 @@
 		padding: 0 10px;
 		padding-top: 10px;
 		padding-bottom: 40px;
-
+	}
+	
+	/*Contacts*/
+	.bg_contacts .nav_button {
+		margin-top: 16px;
+	}
+	.top_contacts h2 {
+		font-size: 22px;
+	}
+	.top_contacts {
+		padding-top: 200px;
+	}
+	.top_contacts p {
+		font-size: 11px;
+		padding-top: 20px;
+	}
+	.contacts_wrap {
+		box-shadow: none;
+		position: inherit;
+	}
+	.contacts_wrap_form_block {
+		padding: 40px 0 40px 0;
+	}
+	.contacts_wrap_form_block p {
+		text-align: center;
+	}
+	.contacts_form input {
+		width: 100%;
+		padding-top: 0;
+	}
+	.contacts_form textarea {
+		width: 100%;
+		padding-top: 10px;
+	}
+	.contacts_form button {
+		margin-bottom: 40px;
+	}
+	.contacts_adaptive {
+		padding: 0;
 	}
 
-		
-
+	/*Popup*/
+	#modal_close{
+		top: 10px;
+		right: 30px;
+	}
+	.mymagicoverbox_fenetre h2 {
+		font-size: 18px;
+		padding-top: 40px;
+	}
+	.mymagicoverbox_fenetre p {
+		font-size: 11px;
+		padding: 0 10px;
+	}
+	.mymagicoverbox_fenetre {
+		width: 316px;
+		left: -158px;
+		z-index: 9999 !important;
+		position: fixed;
+		margin-left: 50%;
+	}
+	.mymagicoverbox_fenetreinterieur {
+		max-height: 300px;
+	}
+	.mymagicoverbox_fenetreinterieur input {
+		text-align: left;
+		padding-top: 10px;
+		margin-bottom: 5px;
+		font-size: 11px;
+		width: 100%;
+	}
+	.mymagicoverbox_fenetreinterieur textarea {
+		font-size: 11px;
+		width: 100%;
+		min-height: 60px;
+	}
+	.mymagicoverbox_fenetreinterieur .btn_form {
+		text-align: center;
+		font-size: 15px;
+		padding: 5px 50px;
+		margin-top: 25px;
+	}
+	#box_3 p {
+		font-size: 10px
+	}
+	#box_3 .btn_form {
+		margin-top: 10px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -299,7 +393,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 993px) {
-	.nav {
+	.nav{
 		display: block;
 	}
 	.open {
