@@ -21,9 +21,9 @@ $message = urldecode($message);
 $message = trim($message);
 
 
-if (mail("hello@gagarin.dp.ua", "Gagarin It-school Подписка на рассылку событий", "Имя: ".$name. "\nE-mail: ".$email. "\nТелефон " .$phone. "\nСообщение: " .$contacts_message , "From: hello@gagarin.dp.ua \r\n"))
+if (mail("hello@gagarin.dp.ua", "Gagarin It-school Подписка на рассылку событий", "Имя: ".$name. "\nE-mail: ".$email. "\nТелефон " .$phone. "\nСообщение: " .$message , "From: hello@gagarin.dp.ua \r\n"))
 	{	echo "Сообщение отправлено, все хорошо!";  
-		header("Location: ./index.html");
+		header("Location: ./ivents.html");
 	} else { 
 		echo "при отправке сообщения возникли ошибки";
 	}
